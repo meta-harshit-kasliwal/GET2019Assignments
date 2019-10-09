@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
     <title>metacube parking System</title>
@@ -14,18 +17,15 @@
     background-position-x: center;
     background-position-y: center;  ">
         <center>
-        <ul>
-            <li> <a href="#Add_Employee"> Add Employee </a></li>
-             <li><a href="#Add_Vehicle"> Add Vehicle </a> </li>
-             <li><a href="#Feedback"> Give Feedback </a> </li>
-            <li><a href="#Pricing"> Pricing</a> </li>
-        </ul>
+       
         
         </center>
         
   </div>
- 
-  <div class="Add_Employee"id="Add_Employee">
+    <div>
+        <button type="button" class="btn btn-info" aria-expanded="false" aria-controls="collapse" data-toggle="collapse" data-target="#Add_Employee"  >Add Employee</button>
+    </div>
+    <div class="collapse" id="Add_Employee">
 
         <h2 align="center">Add details</h2>
         <form action="" align="center" method="POST" onsubmit="return checkValidation(this)">
@@ -46,8 +46,10 @@
                 <input type="button" type="submit" value="REGISTERED">
         </form>
   </div>
-
-  <div class="Add_Vehicle" id="Add_Vehicle">
+    <div>
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Add_Vehicle">Add Vehicle</button>
+    </div>
+    <div class="collapse" id="Add_Vehicle">
       <h2 align ="center"> Enter vehicle details</h2>
       <form action=""  align="center" method="POST" onsubmit="return showPassPrice(this)">
             Full Name: 
@@ -69,8 +71,10 @@
                <input type="Submit" value="Add Vehicle">
    </form>
   </div>
-
-<div class="Feedback" id="Feedback">
+<div>
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Feedback">Feedback</button>
+</div>
+    <div class="collapse" id="Feedback">
     <h2 align="center"> We love to here back from you</h2>
     <form action=""  align="center" method="POST" onsubmit="return showPassPrice(this)">
             Full Name: 
@@ -84,8 +88,10 @@
     </form>
             <img src="envelop.jpg" alt="google.com" align= "left" height="400">    
   </div>
-
-  <div class= "Pricing" id="Pricing">
+<div>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Pricing">Pricing</button>
+</div>
+  <div class= "collapse" id="Pricing">
         <center>
                 <h2>Pricing details</h2>
                    <br><br><br><br>
