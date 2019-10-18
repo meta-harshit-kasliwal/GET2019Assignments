@@ -1,8 +1,20 @@
 
+header {
+  height: 50px;
+  font-size: 30px;
+  background-color: black;
+}
+strong {
+  color: white;
+}
 
-body, html, .main {
+body, html{
 
     height: 100%;
+    width: 100%;
+  }
+  .main {
+    height: 600px;
     width: 100%;
   }
 
@@ -17,7 +29,7 @@ body, html, .main {
 
 .pricing-container {
     box-sizing: border-box;
-    border : 2px solid rgb(70, 173, 214);
+    border : 2px solid rgb(146, 240, 166);
     border-radius: 5%;
     float: left;
     width: 26%;
@@ -27,13 +39,13 @@ body, html, .main {
 
 #Add_Vehicle{
    
-    background-color: chartreuse;
+    background-color: rgb(171, 211, 144);
     border: solid;
     height: 100%;
 }
 
 #Feedback{
-    background-color: darkmagenta;
+    background-color: rgb(187, 210, 240);
     border: solid;
     height: 100%;
 
@@ -68,10 +80,7 @@ input, select, textarea {
     text-decoration: none;
   }
   /* Change the link color on hover */
-  li a:hover {
-    background-color: #555;
-    color: white;
-  }
+  
 
   #Circle{
     border: 1px solid black;
@@ -80,4 +89,11 @@ input, select, textarea {
     height : 70px;
     padding: 5px;
     text-align: center;
+}
+
+
+
+.btn {
+  color:yellow;
+  width: 100%;
 }
