@@ -11,70 +11,72 @@
     <title>metacube parking System</title>
 </head>
 <body>
-    <h1 align="center"> welcome to metacube parking System</h1>
-    
-    <div class="main" style="background-image: url(parking.jpg);background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;  ">
-        <center>
-       
-        
-        </center>
-        
+    <header align="center"> 
+        <strong>Welcome to metacube parking System</strong>   
+    </header>
+    <div class="main" style="background-image: url(parking.jpg);">
   </div>
-    <div>
-        <button type="button" class="btn btn-info" aria-expanded="false" aria-controls="collapse" data-toggle="collapse" data-target="#Add_Employee"  >Add Employee</button>
-    </div>
-    <div class="collapse" id="Add_Employee">
 
-        <h2 align="center">Add details</h2>
-        <form action="" align="center" method="POST" onsubmit="return checkValidation(this)">
-                 Full Name: 
-                 <input type="text" name="fullName" id="fullName" required> <br><br>
-                Gender:  
-                <input type="radio" name="Gender" value="Male" required> Male
-                <input type="radio" name="Gender" value="Female"> Female <br><br>
-                E-mail: <input type="email" name="emailaddress" required><br><br>
-                User name: 
-                <input type="text" required><br><br>
-                User password: 
-                <input type="password" name="psw" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br> <br>
-                Confirm password: 
-                <input type="password" name="Confirmpsw" id="Confirmpsw" required><br> <br>
-                Contact Number: 
-                <input type="number" name="contact_no" minlength="8" required><br><br>
-                <input type="button" type="submit" value="REGISTERED">
-        </form>
-  </div>
-    <div>
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Add_Vehicle">Add Vehicle</button>
+  <div style="background-color: rgb(95, 86, 86);">
+        <!-- <button type="button" class="btn btn-info" aria-expanded="false" aria-controls="collapse" data-toggle="collapse" data-target="#Add_Employee"  >Add Employee</button>
+    </div> -->
+        <details>
+            <summary class="btn btn-danger">ADD EMPLOYEE</summary>
+        <div id="Add_Employee">
+
+            <h2 align="center">Add details</h2>
+            <form action="" align="center" method="POST" onsubmit="return checkValidation(this)">
+                    Full Name: 
+                    <input type="text" name="fullName" id="fullName" required> <br><br>
+                    Gender:  
+                    <input type="radio" name="Gender" value="Male" required> Male
+                    <input type="radio" name="Gender" value="Female"> Female <br><br>
+                    E-mail: <input type="email" name="emailaddress" required><br><br>
+                    User name: 
+                    <input type="text" required><br><br>
+                    User password: 
+                    <input type="password" name="psw" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br> <br>
+                    Confirm password: 
+                    <input type="password" name="Confirmpsw" id="Confirmpsw" required><br> <br>
+                    Contact Number: 
+                    <input type="number" name="contact_no" minlength="8" required><br><br>
+                    <input type="button" type="submit" value="REGISTERED">
+            </form>
     </div>
-    <div class="collapse" id="Add_Vehicle">
-      <h2 align ="center"> Enter vehicle details</h2>
-      <form action=""  align="center" method="POST" onsubmit="return showPassPrice(this)">
-            Full Name: 
-                <input type="text" name="fullName2" id="fullName2" required> <br><br>
-            Vechile Company Name: 
-                <input type="text" name="CompName" id="CompName" required> <br><br>
-            Vehicle Name: 
-                <input type="text" name="VehicleName" id="VehicleName" required> <br><br>
-               Add Vehicle:
-                <input type="radio" name="Add" id="Add" value="Cycle" required> Cycle
-                <input type="radio" name="Add" id="Add" value="Motor Cycle" required> Motor Cycle
-               <input type="radio" name="Add" id="Add" value="Four Wheelers"> Four Wheelers <br><br>
-           Vehicle Number: 
-               <input type="text" name="VehicleNumber" id="VehicleNumber" required> <br><br>
-           Employee ID: 
-               <input type="number" name="EmpId" required> <br><br>
-           Vehicle Identification: 
-               <input type="text" name="Inden" required> <br><br>
-               <input type="Submit" value="Add Vehicle">
-   </form>
-  </div>
-<div>
-    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Feedback">Feedback</button>
-</div>
-    <div class="collapse" id="Feedback">
+    </details>
+
+            <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Add_Vehicle">Add Vehicle</button>
+        </div> -->
+        <details>
+            <summary class = "btn btn-danger">ADD VEHICLE </summary>
+        <div id="Add_Vehicle">
+        <h2 align ="center"> Enter vehicle details</h2>
+            <form action=""  align="center" method="POST" onsubmit="return showPassPrice(this)">
+                Full Name: 
+                    <input type="text" name="fullName2" id="fullName2" required> <br><br>
+                Vechile Company Name: 
+                    <input type="text" name="CompName" id="CompName" required> <br><br>
+                Vehicle Name: 
+                    <input type="text" name="VehicleName" id="VehicleName" required> <br><br>
+                Add Vehicle:
+                    <input type="radio" name="Add" id="Add" value="Cycle" required> Cycle
+                    <input type="radio" name="Add" id="Add" value="Motor Cycle" required> Motor Cycle
+                <input type="radio" name="Add" id="Add" value="Four Wheelers"> Four Wheelers <br><br>
+            Vehicle Number: 
+                <input type="text" name="VehicleNumber" id="VehicleNumber" required> <br><br>
+            Employee ID: 
+                <input type="number" name="EmpId" required> <br><br>
+            Vehicle Identification: 
+                <input type="text" name="Inden" required> <br><br>
+                <input type="Submit" value="Add Vehicle">
+            </form>
+        </div>
+        </details>
+    <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Feedback">Feedback</button>
+</div> -->
+    <details>
+        <summary class="btn btn-danger">Feedback</summary>
+    <div id="Feedback">
     <h2 align="center"> We love to here back from you</h2>
     <form action=""  align="center" method="POST" onsubmit="return showPassPrice(this)">
             Full Name: 
@@ -87,45 +89,50 @@
             <input type="submit" value ="send">
     </form>
             <img src="envelop.jpg" alt="google.com" align= "left" height="400">    
-  </div>
-<div>
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Pricing">Pricing</button>
-</div>
-  <div class= "collapse" id="Pricing">
-        <center>
-                <h2>Pricing details</h2>
-                   <br><br><br><br>
-                   <div class = "pricing-container">
-                   <fieldset style="width:20%" >
-                   <h4 align="center"> Cycle </h4>
-                   <div id="Circle"><br>100$/mon</div>
-                   <h6 align="center"> $5 Daily </h6>
-                   <h6 align="center"> $100 Monthly </h6>
-                   <h6 align="center"> $500 Yearly </h6>
-                   <input type="Submit" value="PURCHASE">
-                </div>
-                <div class = "pricing-container"> 
-                   </fieldset>
-                       <fieldset style="width:20%" >
-                       <h4 align="center"> Motor Cycle </h4>
-                       <div id="Circle"><br>100$/mon</div>
-                       <h6 align="center"> $5 Daily </h6>
-                       <h6 align="center"> $100 Monthly </h6>
-                       <h6 align="center"> $500 Yearly </h6>
-                       <input type="Submit" value="PURCHASE" align="center">
-                       </fieldset>
+    </div>
+    </details>
+
+    <details>
+        <summary class="btn btn-danger">Pricing Details</summary>
+        <div>
+            <center>
+                    <h2>Pricing details</h2>
+                    <br><br><br><br>
+                    <div class = "pricing-container">
+                        <fieldset style="width:20%" >
+                            <h4 align="center"> Cycle </h4>
+                            <div id="Circle"><br>100$/mon</div>
+                            <h6 align="center"> $5 Daily </h6>
+                            <h6 align="center"> $100 Monthly </h6>
+                            <h6 align="center"> $500 Yearly </h6>
+                            <input type="Submit" value="PURCHASE">    
+                        </fieldset>
                     </div>
-                <div class = "pricing-container">  
-                           <fieldset style="width:20%" >
-                           <h4 align="center"> Four Wheelers </h4>
-                           <div id="Circle"><br>100$/mon</div>
-                           <h6 align="center"> $5 Daily </h6>
-                           <h6 align="center"> $100 Monthly </h6>
-                           <h6 align="center"> $500 Yearly </h6>
-                           <input type="Submit" value="PURCHASE">
-                           </fieldset>
-                        </div>
-                        </center>
-  </div>
+                    <div class = "pricing-container"> 
+                        <fieldset style="width:20%" >
+                            <h4 align="center"> Motor Cycle </h4>
+                            <div id="Circle"><br>100$/mon</div>
+                            <h6 align="center"> $5 Daily </h6>
+                            <h6 align="center"> $100 Monthly </h6>
+                            <h6 align="center"> $500 Yearly </h6>
+                            <input type="Submit" value="PURCHASE" align="center">
+                        </fieldset>
+                    </div>
+                    <div class = "pricing-container">  
+                        <fieldset style="width:20%" >
+                            <h4 align="center"> Four Wheelers </h4>
+                            <div id="Circle"><br>100$/mon</div>
+                            <h6 align="center"> $5 Daily </h6>
+                            <h6 align="center"> $100 Monthly </h6>
+                            <h6 align="center"> $500 Yearly </h6>
+                            <input type="Submit" value="PURCHASE">
+                        </fieldset>
+                    </div>
+            </center>
+    </div>
+
+
+</div>
+
 </body>
 </html>
